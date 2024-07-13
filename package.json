@@ -1,9 +1,8 @@
 {
   "name": "turn-the-page",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/js/turn-the-page.browser.js",
   "browser": "dist/js/turn-the-page.browser.js",
-  "module": "dist/js/turn-the-page.module.js",
   "author": "oleg.litovski9@gmail.com",
   "license": "MIT",
   "description": "Powerful, simple and flexible JS Library for creating realistic and beautiful page turning effect",
