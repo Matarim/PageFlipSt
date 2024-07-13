@@ -1,6 +1,6 @@
 {
   "name": "turn-the-page",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/js/turn-the-page.browser.js",
   "browser": "dist/js/turn-the-page.browser.js",
   "author": "oleg.litovski9@gmail.com",
