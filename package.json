@@ -1,7 +1,6 @@
 {
   "name": "turn-the-page",
-  "version": "1.0.4",
-  "type": "module",
+  "version": "1.0.5",
   "main": "dist/js/turn-the-page.browser.js",
   "browser": "dist/js/turn-the-page.browser.js",
   "module": "dist/js/turn-the-page.module.js",
