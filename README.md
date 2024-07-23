@@ -31,21 +31,21 @@ Or download bundle from Github
 
 ### Usage
 
-If you've installed the package from npm, you should import PageFlip from page-flip package, or just use `<script/>` tag:
+If you've installed the package from npm, you should import TurnThePage from page-flip package, or just use `<script/>` tag:
 
 ```html
 <script src="{path/to/scripts}/page-flip.browser.js"></script>
 ```
 
-To create a new PageFlip object:
+To create a new TurnThePage object:
 
 ```js
-import { PageFlip } from 'page-flip';
+import { TurnThePage } from 'page-flip';
 
-const pageFlip = new PageFlip(htmlParentElement, settings);
+const pageFlip = new TurnThePage(htmlParentElement, settings);
 
 // or if you're using a script tag and page-flip.browser.js:
-const pageFlip = new St.PageFlip(htmlParentElement, settings);
+const pageFlip = new St.TurnThePage(htmlParentElement, settings);
 ```
 
 `htmlParentElement - HTMLElement`- root element, where the book will be created
@@ -90,7 +90,7 @@ For example:
 ```
 
 ```js
-const pageFlip = new PageFlip(document.getElementById('book'), {
+const pageFlip = new TurnThePage(document.getElementById('book'), {
     width: 400, // required parameter - base page width
     height: 600, // required parameter - base page height
 });
@@ -141,7 +141,7 @@ Available events:
 -   `init: ({page: number, mode: 'portrait', 'landscape'})` - triggered when the book is init and the start page is loaded. Listen (`on`) this event before using the "loadFrom..." methods
 -   `update: ({page: number, mode: 'portrait', 'landscape'})` - triggered when the book pages are updated (using the "updateFrom..." methods)
 
-Event object has two fields: `data: number | string` and `object: PageFlip`
+Event object has two fields: `data: number | string` and `object: TurnThePage`
 
 ### Methods
 

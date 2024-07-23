@@ -1,5 +1,5 @@
 import { UI } from './UI';
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { FlipSetting } from '../Settings';
 
 /**
@@ -10,7 +10,7 @@ export class HTMLUI extends UI {
 
     constructor(
         inBlock: HTMLElement,
-        app: PageFlip,
+        app: TurnThePage,
         setting: FlipSetting,
         items: NodeListOf<HTMLElement> | HTMLElement[]
     ) {

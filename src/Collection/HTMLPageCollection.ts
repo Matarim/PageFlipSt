@@ -1,7 +1,7 @@
 import { HTMLPage } from '../Page/HTMLPage';
 import { Render } from '../Render/Render';
 import { PageCollection } from './PageCollection';
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { PageDensity } from '../Page/Page';
 
 /**
@@ -12,7 +12,7 @@ export class HTMLPageCollection extends PageCollection {
     private readonly pagesElement: NodeListOf<HTMLElement> | HTMLElement[];
 
     constructor(
-        app: PageFlip,
+        app: TurnThePage,
         render: Render,
         element: HTMLElement,
         items: NodeListOf<HTMLElement> | HTMLElement[]

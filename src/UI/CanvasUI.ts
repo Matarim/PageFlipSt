@@ -1,5 +1,5 @@
 import {UI} from "./UI";
-import {PageFlip} from "../PageFlip";
+import {TurnThePage} from "../TurnThePage";
 import {FlipSetting} from "../Settings";
 
 /**
@@ -8,7 +8,7 @@ import {FlipSetting} from "../Settings";
 export class CanvasUI extends UI {
     private readonly canvas: HTMLCanvasElement;
 
-    constructor(inBlock: HTMLElement, app: PageFlip, setting: FlipSetting) {
+    constructor(inBlock: HTMLElement, app: TurnThePage, setting: FlipSetting) {
         super(inBlock, app, setting);
 
         this.wrapper.innerHTML = '<canvas class="stf__canvas"></canvas>';

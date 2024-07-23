@@ -1,5 +1,5 @@
 import { Orientation, Render } from './Render';
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { FlipDirection } from '../Flip/Flip';
 import { PageOrientation } from '../Page/Page';
 import { FlipSetting } from '../Settings';
@@ -11,7 +11,7 @@ export class CanvasRender extends Render {
     private readonly canvas: HTMLCanvasElement;
     private readonly ctx: CanvasRenderingContext2D;
 
-    constructor(app: PageFlip, setting: FlipSetting, inCanvas: HTMLCanvasElement) {
+    constructor(app: TurnThePage, setting: FlipSetting, inCanvas: HTMLCanvasElement) {
         super(app, setting);
 
         this.canvas = inCanvas;

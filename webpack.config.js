@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/PageFlip.ts',
+    entry: './src/TurnThePage.ts',
     output: {
         path: path.resolve(__dirname, 'dist/js'),
-        filename: 'pageFlip.browser.js',
+        filename: 'turnThePage.browser.js',
         library: 'St'
     },
     mode: 'development',

@@ -1,7 +1,7 @@
 import { ImagePage } from '../Page/ImagePage';
 import { Render } from '../Render/Render';
 import { PageCollection } from './PageCollection';
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { PageDensity } from '../Page/Page';
 
 /**
@@ -10,7 +10,7 @@ import { PageDensity } from '../Page/Page';
 export class ImagePageCollection extends PageCollection {
     private readonly imagesHref: string[];
 
-    constructor(app: PageFlip, render: Render, imagesHref: string[]) {
+    constructor(app: TurnThePage, render: Render, imagesHref: string[]) {
         super(app, render);
 
         this.imagesHref = imagesHref;

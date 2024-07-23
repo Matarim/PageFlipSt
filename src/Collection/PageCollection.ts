@@ -1,6 +1,6 @@
 import { Orientation, Render } from '../Render/Render';
 import { Page, PageDensity } from '../Page/Page';
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { FlipDirection } from '../Flip/Flip';
 
 type NumberArray = number[];
@@ -9,7 +9,7 @@ type NumberArray = number[];
  * Сlass representing a collection of pages
  */
 export abstract class PageCollection {
-    protected readonly app: PageFlip;
+    protected readonly app: TurnThePage;
     protected readonly render: Render;
     protected readonly isShowCover: boolean;
 
@@ -25,7 +25,7 @@ export abstract class PageCollection {
     /**  One-page spread in portrait mode */
     protected portraitSpread: NumberArray[] = [];
 
-    protected constructor(app: PageFlip, render: Render) {
+    protected constructor(app: TurnThePage, render: Render) {
         this.render = render;
         this.app = app;
 

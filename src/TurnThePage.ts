@@ -21,7 +21,7 @@ import './Style/stPageFlip.css';
  *
  * @extends EventObject
  */
-export class PageFlip extends EventObject {
+export class TurnThePage extends EventObject {
     private mousePosition: Point;
     private isUserTouch = false;
     private isUserMove = false;

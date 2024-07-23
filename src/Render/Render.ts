@@ -1,4 +1,4 @@
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { Point, PageRect, RectPoints } from '../BasicTypes';
 import { FlipDirection } from '../Flip/Flip';
 import { Page, PageOrientation } from '../Page/Page';
@@ -55,7 +55,7 @@ export const enum Orientation {
  */
 export abstract class Render {
     protected readonly setting: FlipSetting;
-    protected readonly app: PageFlip;
+    protected readonly app: TurnThePage;
 
     /** Left static book page */
     protected leftPage: Page = null;
@@ -90,7 +90,7 @@ export abstract class Render {
      */
     private safari = false;
 
-    protected constructor(app: PageFlip, setting: FlipSetting) {
+    protected constructor(app: TurnThePage, setting: FlipSetting) {
         this.setting = setting;
         this.app = app;
 

@@ -4,8 +4,8 @@ import { terser } from 'rollup-plugin-terser';
 
 export default [
     {
-        input: 'src/PageFlip.ts',
-        output: [{ file: 'dist/js/page-flip.browser.js', format: 'umd', name: 'St' }],
+        input: 'src/TurnThePage.ts',
+        output: [{ file: 'dist/js/turn-the-page.browser.js', format: 'umd', name: 'St' }],
         plugins: [
             postcss(),
             typescript({ tsconfig: 'tsconfig.json', useTsconfigDeclarationDir: true }),
@@ -13,8 +13,8 @@ export default [
         ],
     },
     {
-        input: 'src/PageFlip.ts',
-        output: [{ file: 'dist/js/page-flip.module.js', format: 'es' }],
+        input: 'src/TurnThePage.ts',
+        output: [{ file: 'dist/js/turn-the-page.module.js', format: 'es' }],
         plugins: [
             postcss(),
             typescript({ tsconfig: 'tsconfig.json', useTsconfigDeclarationDir: true }),

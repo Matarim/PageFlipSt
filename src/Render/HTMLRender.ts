@@ -1,5 +1,5 @@
 import { Orientation, Render } from './Render';
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { FlipDirection } from '../Flip/Flip';
 import { PageDensity, PageOrientation } from '../Page/Page';
 import { HTMLPage } from '../Page/HTMLPage';
@@ -24,11 +24,11 @@ export class HTMLRender extends Render {
     /**
      * @constructor
      *
-     * @param {PageFlip} app - PageFlip object
+     * @param {TurnThePage} app - PageFlip object
      * @param {FlipSetting} setting - Configuration object
      * @param {HTMLElement} element - Parent HTML Element
      */
-    constructor(app: PageFlip, setting: FlipSetting, element: HTMLElement) {
+    constructor(app: TurnThePage, setting: FlipSetting, element: HTMLElement) {
         super(app, setting);
 
         this.element = element;

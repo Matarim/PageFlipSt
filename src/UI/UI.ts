@@ -1,4 +1,4 @@
-import { PageFlip } from '../PageFlip';
+import { TurnThePage } from '../TurnThePage';
 import { Point } from '../BasicTypes';
 import { FlipSetting, SizeType } from '../Settings';
 import { FlipCorner, FlippingState } from '../Flip/Flip';
@@ -15,7 +15,7 @@ type SwipeData = {
 export abstract class UI {
     protected readonly parentElement: HTMLElement;
 
-    protected readonly app: PageFlip;
+    protected readonly app: TurnThePage;
     protected readonly wrapper: HTMLElement;
     protected distElement: HTMLElement;
 
@@ -31,10 +31,10 @@ export abstract class UI {
      * @constructor
      *
      * @param {HTMLElement} inBlock - Root HTML Element
-     * @param {PageFlip} app - PageFlip instanse
+     * @param {TurnThePage} app - PageFlip instanse
      * @param {FlipSetting} setting - Configuration object
      */
-    protected constructor(inBlock: HTMLElement, app: PageFlip, setting: FlipSetting) {
+    protected constructor(inBlock: HTMLElement, app: TurnThePage, setting: FlipSetting) {
         this.parentElement = inBlock;
 
         inBlock.classList.add('stf__parent');
@@ -169,7 +169,7 @@ export abstract class UI {
     private checkTarget(targer: EventTarget): boolean {
         if (!this.app.getSettings().clickEventForward) return true;
 
-        if (['a', 'button'].includes((targer as HTMLElement).tagName.toLowerCase())) {
+        if (['a', 'button', 'input'].includes((targer as HTMLElement).tagName.toLowerCase())) {
             return false;
         }
 
